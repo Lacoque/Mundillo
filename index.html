@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundillo</title>
-    <link rel="icon" type="image/x-icon" href="imagen/logo.ico"> 
+    <link rel="icon" type="image/png" href="imagen/favicon.png"> 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
         
@@ -60,7 +60,40 @@
             vertical-align: middle;
             margin-right: 5px;
         }
+  /* Footer */
+  footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
 
+        /* Enlace del footer */
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #e1306c; /* Color oficial de Instagram */
+        }
+ /* Icono personalizado del footer */
+ .custom-icon {
+            width: 50px;
+            height: 50px;
+            filter: brightness(0) invert(1); /* Convierte el icono a blanco */
+            transition: filter 0.3s ease;
+        }
+
+        /* Efecto hover para el icono personalizado */
+        footer a:hover .custom-icon {
+            filter: brightness(1) sepia(1) saturate(5) hue-rotate(300deg); /* Cambia a color Instagram */
+        }
         @media (max-width: 600px) {
             .logo {
                 max-width: 300px;
@@ -84,5 +117,11 @@
             </a>
         </p>
     </div>
+    <footer>
+        <a href="https://www.contenidx.com.ar" title="Ir a la página destino">
+            <img src="imagen/CX.ico" alt="Icono Personalizado" class="custom-icon">
+        </a>
+
+    </footer>
 </body>
 </html>
