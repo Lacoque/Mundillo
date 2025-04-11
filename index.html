@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En Desarrollo</title>
+    <link rel="icon" type="image/ico" href="logo.ico"> <!-- Reemplaza "logo.png" con la ruta correcta de tu archivo -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Imagen del logo */
+        .logo {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        /* Mensaje principal */
+        .message {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Enlace a Instagram */
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover,
+        a:focus {
+            color: #e1306c; /* Color oficial de Instagram */
+        }
+
+        /* Icono de Instagram */
+        .instagram-icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        /* Media Queries para dispositivos móviles */
+        @media (max-width: 600px) {
+            .logo {
+                max-width: 300px;
+            }
+
+            .message {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Imagen/logo.png" alt="Logo" class="logo"> <!-- Reemplaza "logo.jpg" con la ruta correcta de tu archivo -->
+        <p class="message">
+            Estamos desarrollando el sitio.<br>
+            Mientras podes escribirme o lo que sea en Instagram:
+            <a href="https://www.instagram.com//">
+                <img src="instagram-logo.png" alt="Instagram" class="instagram-icon" width="24" height="24">
+            
+            </a>
+        </p>
+    </div>
+</body>
+</html>
