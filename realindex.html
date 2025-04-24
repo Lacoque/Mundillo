@@ -3,53 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundillo - Suscripciones y Contacto</title>
-    <style>
-        body {
-           
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header, section, footer {
-            padding: 20px;
-        }
-        header {
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        .subscription-plans, .contact-form {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .plan-group {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-        }
-        .plan {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: center;
-            width: 30%;
-        }
-        .social-links {
-            text-align: center;
-        }
-        .social-links a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #333;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-        }
-    </style>
+    <title>Mundillo</title>
+    <link rel="icon" type="image/png" href="imagen/favicon.png"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Encabezado -->
+    <nav class="navbar">
+        <a href="#" class="logo">M</a>
+        <div class="nav-links">
+            <a href="#suscripciones">Suscripciones</a>
+            <a href="#tienda">Tienda</a>
+            <a href="#programaciones">Programaciones</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.twitch.tv" target="_blank"><i class="fab fa-twitch"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </nav>
+
     <header>
         <h1>Mundillo</h1>
         <p>Crecemos con el aporte y cariño de todes.</p>
@@ -57,77 +29,128 @@
     </header>
 
     <!-- Planes de Suscripción -->
-  
-<section class="subscription-plans">
-    <h2>Suscripciones</h2>
-    <div class="plan-group">
-        <a href="https://link1.com" class="plan">
-            <h3>$5.000</h3>
-            <p>por mes</p>
-        </a>
-        <a href="https://link2.com" class="plan">
-            <h3>$10.000</h3>
-            <p>por mes</p>
-        </a>
-        <a href="https://link3.com" class="plan">
-            <h3>$15.000</h3>
-            <p>por mes</p>
-        </a>
-    </div>
-    <div class="plan-group">
-        <a href="https://link4.com" class="plan">
-            <h3>$5.000</h3>
-            <p>única vez</p>
-        </a>
-        <a href="https://link5.com" class="plan">
-            <h3>$10.000</h3>
-            <p>única vez</p>
-        </a>
-        <a href="https://link6.com" class="plan">
-            <h3>$15.000</h3>
-            <p>única vez</p>
-        </a>
-    </div>
-    <p>Si estás fuera de Argentina podés colaborar desde:</p>
-    <div class="plan-group">
-        <a href="https://link7.com" class="plan">
-            <h3>5 USD</h3>
-            <p>por mes</p>
-        </a>
-        <a href="https://link8.com" class="plan">
-            <h3>10 USD</h3>
-            <p>por mes</p>
-        </a>
-        <a href="https://link9.com" class="plan">
-            <h3>20 USD</h3>
-            <p>por mes</p>
-        </a>
-    </div>
-    <div class="plan-group">
-        <a href="https://link10.com" class="plan">
-            <h3>5 USD</h3>
-            <p>única vez</p>
-        </a>
-        <a href="https://link11.com" class="plan">
-            <h3>10 USD</h3>
-            <p>única vez</p>
-        </a>
-        <a href="https://link12.com" class="plan">
-            <h3>20 USD</h3>
-            <p>única vez</p>
-        </a>
-    </div>
-</section>
+    <section class="subscription-plans">
+        <h2>Suscripciones</h2>
+        <div class="subscription-container">
+          
+            <div class="subscription-image">
+                <img src="imagen/" alt="Imagen de mundillo trans">
+            </div>
+            
+            <div class="subscription-details">
+                <div class="plan-group">
+                    <a href="#" class="plan">
+                        <h3>$5.000</h3>
+                        <p>por mes</p>
+                    </a>
+                    <a href="#" class="plan">
+                        <h3>$10.000</h3>
+                        <p>por mes</p>
+                    </a>
+                    <a href="#" class="plan">
+                        <h3>$15.000</h3>
+                        <p>por mes</p>
+                    </a>
+                </div>
+                <div class="plan-group">
+                    <a href="#" class="plan">
+                        <h3>$5.000</h3>
+                        <p>única vez</p>
+                    </a>
+                    <a href="#" class="plan">
+                        <h3>$10.000</h3>
+                        <p>única vez</p>
+                    </a>
+                    <a href="#" class="plan">
+                        <h3>$15.000</h3>
+                        <p>única vez</p>
+                    </a>
+                </div>
+                <p>Si estás fuera de Argentina podés colaborar desde:</p>
+                <div class="plan-group">
+                    <a href="#" class="plan">
+                        <h3>5 USD</h3>
+                        <p>por mes</p>
+                    </a>
+                    <a href="#" class="plan">
+                        <h3>10 USD</h3>
+                        <p>por mes</p>
+                    </a>
+                    <a href="#" class="plan">
+                        <h3>20 USD</h3>
+                        <p>por mes</p>
+                    </a>
+                </div>
+                <div class="plan-group">
+                    <a href="##" class="plan">
+                        <h3>5 USD</h3>
+                        <p>única vez</p>
+                    </a>
+                    <a href="#" class="plan">
+                        <h3>10 USD</h3>
+                        <p>única vez</p>
+                    </a>
+                    <a href="#" class="plan">
+                        <h3>20 USD</h3>
+                        <p>única vez</p>
+                    </a>
+                </div>
+                <div class="additional-info">
+                    <p>Hacé el aporte que prefieras</p>
+                    <p><strong>mundillo</strong></p>
+                    <p>Alias Conocenos un poco más</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Beneficios -->
+    <section class="benefits">
+        <h2>Beneficios</h2>
+        <p>Al suscribirte, accedés a descuentos y beneficios en estas tiendas.</p>
+        <div class="benefits-cards">
+            <div class="benefit-card">
+                <img src="imagen/" alt="Beneficio 1">
+               
+            </div>
+            <div class="benefit-card">
+                <img src="imagen/" alt="Beneficio 2">
+             
+            </div>
+            <div class="benefit-card">
+                <img src="imagen/" alt="Beneficio 3">
+                
+            </div>
+        </div>
+    </section>
 
     <!-- Sección de Redes Sociales -->
     <section class="social-links">
         <h2>Todo nuestro contenido lo vas a encontrar en:</h2>
-        <a href="https://www.twitch.tv">Twitch</a>
-        <a href="https://www.youtube.com">YouTube</a>
+        <a href="https://www.twitch.tv/search?term=mundillo%20trans">Twitch</a>
+        <a href="https://www.youtube.com/@mundilloo">YouTube</a>
         <p>Estemos en contacto! Seguinos en Instagram</p>
         <a href="https://www.instagram.com/mundillotrans">@mundillotrans</a>
-        <p>El estilo mundillo lo encontrás en la tienda</p>
-        <a href="#">Ir a Tienda</a>
+    </section>
+
+    <!-- Sección de Tienda -->
+    <section class="store">
+        <h2>El estilo mundillo lo encontrás en la tienda</h2>
+        <p>Fijate tallas y modelos de todos los productos y accesorios.</p>
+        <div class="store-cards">
+            <a href="https://mundillo.misitiosimple.online/tote-mundillo" class="store-card" target="_blank">
+                <h3>Producto</h3>
+            </a>
+            <a href="#" class="store-card" target="_blank">
+                <h3>Producto 2</h3>
+            </a>
+            <a href="#" class="store-card" target="_blank">
+                <h3>Producto 3</h3>
+            </a>
+            <a href="#" class="store-card" target="_blank">
+                <h3>Producto 4</h3>
+            </a>
+        </div>
     </section>
 
     <!-- Formulario de Contacto -->
@@ -146,7 +169,7 @@
 
     <!-- Footer -->
     <footer>
-        <p> </p>
+        <p></p>
     </footer>
 </body>
 </html>
