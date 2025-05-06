@@ -6,120 +6,92 @@
     <title>Mundillo</title>
     <link rel="icon" type="image/png" href="imagen/favicon.png"> 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #000;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-        }
-
-        
-        .container {
-            max-width: 800px;
-            width: 100%;
-            padding: 20px;
-        }
-
-        .logo {
-            width: 100%;
-            max-width: 600px;
-            margin-bottom: 20px;
-        }
-
-        .message {
-            font-size: 1.5rem;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-       
-        a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        a:hover,
-        a:focus {
-            color: #e1306c; 
-        }
-
-        
-        .instagram-icon {
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 5px;
-        }
-  /* Footer */
-  footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        /* Enlace del footer */
-        footer a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        footer a:hover {
-            color: #e1306c;
-        }
- /* Icono personalizado del footer */
- .custom-icon {
-            width: 50px;
-            height: 50px;
-            filter: brightness(0) invert(1); 
-            transition: filter 0.3s ease;
-        }
-        footer a:hover .custom-icon {
-            filter: brightness(1) sepia(1) saturate(5) hue-rotate(300deg); /* Cambia a color Instagram */
-        }
-        @media (max-width: 600px) {
-            .logo {
-                max-width: 300px;
-            }
-
-            .message {
-                font-size: 1.2rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <img src="Imagen/logo.png" alt="Logo" class="logo"> 
-        <p class="message">
-            Estamos desarrollando el sitio.<br>
-            Mientras podes chusmear todo el contenido por 
-            <a href="https://www.instagram.com/mundillotrans/">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="Instagram" class="instagram-icon" width="24" height="24">
-            </a>            
-            </a>
-        </p>
-    </div>
+    <section id="portada-inicial">
+        <div class="aportes">
+            <div class="aportes-texto">
+                <img src="/imagen/gato-corazon.jpg " alt="Dibujo de gato con perfil furioso en blanco y negro rodeado de un corazón con puas. Boceto frontal.">
+                <div class="aportes-texto-detalle">
+                    <h3>Crecemos con el aporte y cariño de todes.</h3>
+                    <p>En mundillo buscamos generar un cambio cultural y para hacerlo, los aportes de nuestros oyentes son muy importantes.</p>
+                    <h6>Mundillo</h6>
+                </div>
+            </div>
+            <div class="cifras">
+                <div>
+                    <h2>$5.000</h2>
+                    <p>por mes</p>
+                </div>
+                <div>
+                    <h2>$10.000</h2>
+                    <p>por mes</p>
+                </div>
+                <div>
+                    <h2>$15.000</h2>
+                    <p>por mes</p>
+                </div>
+                <div>
+                    <h2>$5.000</h2>
+                    <p>única vez</p>
+                </div>
+                <div>
+                    <h2>$10.000</h2>
+                    <p>única vez</p>
+                </div>
+                <div>
+                    <h2>$15.000</h2>
+                    <p>única vez</p>
+                </div>
+                
+                <div class="ppal">
+                    <p>Si estás fuera de Argentina podés colaborar desde</p>
+                    <img src="/imagen/ppcom.svg" alt="Paypal logo">
+                </div>
+
+                <div>
+                    <h2>$5000</h2>
+                    <p>única vez</p>
+                </div>
+                <div>
+                    <h2>$5000</h2>
+                    <p>única vez</p>
+                </div>
+                <div>
+                    <h2>$5000</h2>
+                    <p>única vez</p>
+                </div>
+                <div>
+                    <h2>$5000</h2>
+                    <p>única vez</p>
+                </div>
+                <div>
+                    <h2>$5000</h2>
+                    <p>única vez</p>
+                </div>
+                <div>
+                    <h2>$5000</h2>
+                    <p>única vez</p>
+                </div>
+
+                <div class="alias">
+                    <p>Hacé el aporte que quieras</p>
+                    <div>
+                        <h3>Mundillo</h3>
+                        <p>ALIAS</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
     <footer>
         <a href="https://www.contenidx.com.ar" title="Ir a la página destino">
             <img src="imagen/CX.ico" alt="Icono Personalizado" class="custom-icon">
         </a>
-
     </footer>
 </body>
 </html>

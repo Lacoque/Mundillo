@@ -12,3 +12,244 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h6 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+
+
+/* body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    color: #e1306c; 
+}
+
+
+.instagram-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #e1306c;
+}
+
+.custom-icon {
+    width: 50px;
+    height: 50px;
+    filter: brightness(0) invert(1); 
+    transition: filter 0.3s ease;
+}
+
+footer a:hover .custom-icon {
+    filter: brightness(1) sepia(1) saturate(5) hue-rotate(300deg);
+}
+
+@media (max-width: 600px) {
+    .logo {
+        max-width: 300px;
+    }
+
+    .message {
+        font-size: 1.2rem;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+#portada-inicial {
+    height: 100vh;
+    width: 100%;
+    background-image: url('imagen/Portada-inicial.jpg');
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.aportes {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: space-between;
+    /* margin: 0 calc(1rem + 5vw); */
+    height: fit-content;
+    width: calc(80vw - 2rem);
+
+    background-color: #E2E2E2;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.aportes > div {
+    /* width: 50%; */
+    /* flex-shrink: 0; */
+}
+
+.aportes div > img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.aportes-texto {
+    width: calc(30% + 5vw);
+    object-fit: cover;
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(161, 161, 161, 0.8) 100%), 
+                  url('imagen/textura-pared.jpg');
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.aportes-texto-detalle {
+    text-align: left;
+    padding: 1rem;
+}
+
+.aportes-texto-detalle h3,
+.aportes-texto-detalle h6,
+.aportes-texto-detalle p {
+    margin-top: 1.5rem;
+}
+
+.cifras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .85rem;
+}
+
+.cifras div {
+    padding: .5rem 1.2rem;
+    border-radius: 5px  ;
+    background-color: #fff;
+}
+
+.cifras div.ppal {
+    grid-column: span 3;
+    
+    display: flex;
+    text-align: left;
+    background-color: #E2E2E2;
+    gap: 1rem;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.cifras div.ppal img {
+    width: auto;
+    height: max-content;
+}
+
+.cifras div h2,
+.cifras div p {
+    color: #000;
+}
+
+.cifras div.alias {
+    grid-column: span 3;
+    
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    
+    padding: 0 0 0 1.2rem;
+
+    overflow: hidden;
+}
+
+.cifras div.alias div {
+    height: 100%;
+    width: 50%;
+    border-radius: 0px;
+    background-color: black;
+}
+
+.cifras div.alias div h3,
+.cifras div.alias div p {
+    color: #fff;
+}
+
+.cifras div.alias div p {
+    border-top: 1px solid #fff;
+}
