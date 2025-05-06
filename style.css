@@ -197,10 +197,25 @@ footer a:hover .custom-icon {
     gap: .85rem;
 }
 
-.cifras div {
+.cifras div,
+.cifras a {
     padding: .5rem 1.2rem;
     border-radius: 5px  ;
-    background-color: #fff;
+    background: #fff;
+    text-decoration: none;
+    color: #000;
+    transition: all .3s, color .05s;
+}
+
+@media (hover:hover) {
+    .cifras a:hover {
+        color: #fff;
+        background: linear-gradient(60deg, rgb(37, 59, 128), rgb(23, 155, 215));
+        transform: scale(1.05);
+    }
+    .cifras a.plan:hover {
+        background: linear-gradient(60deg, rgb(37, 128, 75), rgb(55, 215, 23));
+    }
 }
 
 .cifras div.ppal {
@@ -241,6 +256,7 @@ footer a:hover .custom-icon {
 .cifras div.alias div {
     height: 100%;
     width: 50%;
+    align-content: center;
     border-radius: 0px;
     background-color: black;
 }
