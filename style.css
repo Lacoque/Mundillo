@@ -196,12 +196,15 @@ footer a:hover .custom-icon {
 #initial-cover {
     height: 100vh;
     width: 100%;
-    background-image: url('imagen/Portada-inicial.jpg');
-    background-position: center;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    
+    background-position: center;
+    background-image: url('imagen/Portada-inicial.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .contributions {
@@ -276,6 +279,15 @@ footer a:hover .custom-icon {
     }
 }
 
+.figures a.plan {
+    position: relative;
+}
+
+.figures a .rating span {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
 .figures div.ppal {
     grid-column: span 3;
     
@@ -284,7 +296,6 @@ footer a:hover .custom-icon {
     background-color: #E2E2E2;
     gap: 1rem;
     align-items: center;
-    /* border: 1px solid black; */
 }
 
 .figures div.ppal img {
@@ -411,7 +422,7 @@ a.suscribirse {
 /* clase singular */
 .benefit-card img {
     width: 45%;
-    border-radius: 50px;
+    border-radius: 50%;
     transition: all .3s;
 }
 
@@ -425,11 +436,16 @@ a.suscribirse {
 
 /* Sección de links sociales */
 section.social-links {
+    width: 100%;
+    height: fit-content;
     background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(161, 161, 161, 0.8) 100%), url('imagen/textura-pared.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 4rem 0rem;
+    padding-left: calc(2rem + 2rem);
+    padding-right: calc(2rem + 2rem);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .cover-media {
@@ -439,9 +455,11 @@ section.social-links {
     justify-content: center;
 }
 
-.cover-media img {
-    width: 30%;
-    height: auto;
+.cover-media iframe {
+    height: calc(60vh - 30px);
+    border: none;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
 }
 
 .cover-media-btn {
@@ -529,8 +547,10 @@ a.insta {
 
 /* Sección de Tienda */
 #store {
-    height: 100vh;
-    background: linear-gradient(to right, rgb(75, 75, 75, .85), rgba(0, 0, 0, 0.85)), url('/imagen/gradient.svg');
+    width: 100%;
+    height: fit-content;
+    padding: 2rem 0rem;
+    background: linear-gradient(45deg, rgba(216, 119, 184, 0.7) 0%, rgba(255, 56, 25, 0.7) 100%), url('imagen/Portada-inicial.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -598,18 +618,26 @@ a.insta {
     display: flex;
     justify-content: center;
     align-items: center;
+    
     max-width: 200px;
     height: 200px;
     flex: 1;
+    
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px #000;
+    background-color: #fff;
+    overflow: hidden;
+
     transition: all .3s;
 }
+
 .store-cards a h3 {
-    font-weight: 300;
-    font-size: medium;
+    font-weight: 500;
+    font-size: large;
     border-radius: 5px;
     color: #333;
     background-color: #E2E2E2;
-    padding: .25rem .35rem;
+    padding: .65rem;
     position: absolute;
     bottom: 40%;
     visibility: hidden;
@@ -620,24 +648,35 @@ a.insta {
 .store-cards a img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
-    box-shadow: 0px 5px 15px #000;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     transition: all .3s;
 }
 
 @media (hover:hover) {
-    .store-cards a:hover img {
+    .store-cards a:hover  {
         box-shadow: 0px 8px 20px #000;
         transform: scale(1.05);
-        opacity: 70%;
     }
     .store-cards a:hover h3 {
-        bottom: 0;
         visibility: visible;
         bottom: 50%;
     }
+    .store-cards a:hover img {
+        opacity: 30%;
+    }
+}
+
+.cover-store {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-store img {
+    width: 30%;
+    height: auto;
 }
 
 /* Sección de formulario */
@@ -735,8 +774,8 @@ a.insta {
 @media (hover:hover) {
     .info-form button:hover {
         cursor: pointer;
-        transform: scale(1.05);
+        transform: scale(1.095);
         color: #E2E2E2;
-        background: linear-gradient(60deg, rgba(167, 36, 16, 0.541), rgba(255, 56, 25, 0.767));
+        background: #000;
     }
 }
