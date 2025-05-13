@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #000;
@@ -184,6 +188,10 @@ footer a:hover .custom-icon {
 .navbar a {
     text-decoration: none;
     color: #E2E2E2;
+}
+
+.nav-links > a > i {
+    padding: 0rem .45rem;
 }
 
 .social-icons {
@@ -777,5 +785,32 @@ a.insta {
         transform: scale(1.095);
         color: #E2E2E2;
         background: #000;
+    }
+}
+
+div.footer {
+    display: flex;
+    gap: .3rem;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+div.footer a {
+    color: #E2E2E2;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s;
+    padding: .2rem;
+}
+div.footer a p {
+    transition: all .3s;
+}
+
+@media (hover:hover) {
+    div.footer a:hover p {
+        transform:translateY(-.5rem);
+        color:#FE0034;
     }
 }
