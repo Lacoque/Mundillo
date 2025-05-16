@@ -396,7 +396,7 @@ footer a:hover .custom-icon {
 }
 
 .benefits-details > div > h1 {
-    color: #FF3619;
+    color: #fa001c;
 }
 
 .benefits-details > div > p {
@@ -516,7 +516,7 @@ section.social-links {
 }
 
 .cover-media-btn a:nth-child(2):not(.cover-media-insta a) {
-    background-color: #FE0034;
+    background-color: #fa001c;
 }
 
 .cover-media-btn i {
@@ -723,7 +723,8 @@ a.insta {
     width: 70%;
     height: max-content;
     margin: 1rem;
-    border: 5px solid #FE0034;
+    /* border: 5px solid #fa001c; */
+    border: 5px solid #fa001c;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -829,6 +830,6 @@ div.footer a p {
 @media (hover:hover) {
     div.footer a:hover p {
         transform:translateY(-.5rem);
-        color:#FE0034;
+        color:#fa001c;
     }
 }
