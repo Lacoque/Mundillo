@@ -45,23 +45,58 @@
     .figures {
         max-width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: auto;
         gap: .25rem;
+        /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
     }
     .figures a {
         padding: .85rem;
     }
     .figures h2 {
-        font-size: 1.3em;
+        font-size: 1.085em;
+    }
+    .figures div.ppal {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .figures div.ppal img {
+        width: 5.5rem;
+    }
+    .figures div.alias {
+        align-items: start;
+        flex-direction: column;
+        padding: .55rem 0rem 0rem;
+        gap: .55rem;
+    }
+    .figures div.alias > p {
+        padding: 0rem 1rem;
+    }
+
+    .figures div.alias div {
+        width: 100%;
     }
 
 
 
     /* Benefits */
+    .benefits {
+        padding: 1rem;
+    }
+
+    .benefits-details > img:first-of-type {
+        width: 100%;
+    }
+
     .benefits-details {
         flex-direction: column;
+        gap: 0rem;
     }
     .cover-media-btn {
+        width: 100%;
+        padding: 0rem 1rem;
+    }
+    .benefits-details > div {
         width: 100%;
     }
 
@@ -70,9 +105,64 @@
     /* Tienda */
     .cover-store {
         flex-direction: column;
+        gap: .8rem;
+    }
+    .cover-store img {
+        width: 100%;
     }
 
     .store-action {
+        width: 100%;
+        padding: 0rem 1rem;
+        gap: .5rem;
+    }
+
+    .store-elements {
+        overflow: scroll;
+    }
+    .store-cards {
+        width: fit-content;
+        padding: 0rem 2rem;
+    }
+
+    .store-cards a {
+        width: 300px;
+        height: auto;
+    }
+    .store-cards a img {
+        height: 100%;
+    }
+
+
+    /* Formulario */
+
+    .contact-form {
+        padding: 1rem;
+    }
+    .form-contain {
+        width: 100%;
+        margin: 0rem;
+    }
+    .form-contain form {
+        flex-direction: column;
+    }
+    .form-contain form > img{
+        width: 100%;
+    }
+    .form-contain form .info-form {
+        width: 100%;
+    }
+    .form-contain form .info-form h2,
+    .form-contain form .info-form h3 {
+        text-align: start;
+    }
+}
+
+@media (min-width:1500px) {
+    .contributions {
+        justify-content: space-evenly;
+    }
+    .contributions-text {
         width: 100%;
     }
 }
