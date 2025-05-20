@@ -158,6 +158,15 @@
     }
 }
 
+@media (max-width:740px) {
+    .figures a {
+        padding: .65rem .2rem;
+    }
+    #initial-cover {
+        padding: 1rem .35rem;
+    }
+}
+
 @media (min-width:1500px) {
     .contributions {
         justify-content: space-evenly;
