@@ -479,7 +479,7 @@ a.insta {
     width: 100%;
     height: fit-content;
     padding: 2rem 0rem;
-    background: linear-gradient(45deg, rgba(216, 119, 184, 0.7) 0%, rgba(255, 56, 25, 0.7) 100%), url('imagen/Portada-inicial.jpg');
+    background: linear-gradient(45deg, rgba(197, 12, 43, 0.7) 0%, rgba(255, 56, 25, 0.7) 100%), url('imagen/Portada-inicial.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -713,7 +713,8 @@ div.footer {
     gap: .3rem;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    padding: 4rem 0rem;
+    /* height: 50vh; */
 }
 
 div.footer a {
@@ -732,5 +733,43 @@ div.footer a p {
     div.footer a:hover p {
         transform:translateY(-.5rem);
         color:#fa001c;
+    }
+}
+
+.btn-go-up {
+    position: sticky;
+    bottom: 20px;
+    right: 20px;
+    padding: .1rem;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.go-up {
+    position: fixed;
+    display: flex;
+    gap: .45rem;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #E2E2E2;
+    color: #333;
+    border-radius: 5px;
+    padding: 1rem;
+    transition: all .3s ease-in-out;
+}
+.go-up:hover i {
+    transition: all .3s ease-in-out;
+    transition-delay: .3s;
+}
+
+@media (hover:hover) {
+    .go-up:hover {
+        color: #E2E2E2;
+        background-color: #333;
+    }
+    .go-up:hover i {
+        transform: translateY(-5px);
     }
 }
