@@ -201,8 +201,12 @@
         </div>
         <div class="store-elements">
             <div class="store-cards">
-                <a href="https://mundillo.store/" class="store-card" target="_blank">
+                <!-- <a href="https://mundillo.store/" class="store-card" target="_blank">
                     <img src="/imagen/Store-Tote-3.png" alt="Producto: Bolsa tote con impresión de Mundillo.">
+                    <h3>Ver en tienda</h3>
+                </a> -->
+                <a href="https://mundillo.store/" class="store-card" target="_blank">
+                    <img src="/imagen/Theo-Cigarro.png" alt="Producto: Piluso con impresión de Mundillo.">
                     <h3>Ver en tienda</h3>
                 </a>
                 <a href="https://mundillo.store/" class="store-card" target="_blank">
@@ -221,6 +225,11 @@
         </div>
     </section>
 
+    <div class="btn-go-up">
+        <a href="#initial-cover" class="go-up">
+            <i class="fa-regular fa-circle-up"></i>Subir
+        </a>
+    </div>
 
     <!-- Formulario de Contacto -->
     <section class="contact-form" id="contact">
@@ -248,5 +257,21 @@
             <!-- <p>De Contenidx para</p><img src="imagen/logo.png" alt="marca de mundillo"> -->
         </div>
     </footer>
+    <script>
+        window.addEventListener("scroll", function () {
+            let div = document.querySelector(".go-up");
+            let scrollPosition = window.scrollY; // Obtiene la posición del scroll
+            let triggerPoint = 800; // Cambia este valor según el punto deseado
+            
+            if (scrollPosition > triggerPoint) {
+                div.style.opacity = 1;
+                div.style.transform = "translateY(0)";
+                div.style.transition = "all .3s ease-in-out";
+            } else {
+                div.style.opacity = 0;
+                div.style.transform = "translateY(20px)";
+            }
+        });
+    </script>
 </body>
 </html>
