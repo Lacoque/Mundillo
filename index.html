@@ -4,124 +4,274 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundillo</title>
-    <link rel="icon" type="image/png" href="imagen/favicon.png"> 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #000;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-        }
+    <link rel="icon" type="image/png" href="imagen/Mundillo-Iso-Negro.svg">
 
-        
-        .container {
-            max-width: 800px;
-            width: 100%;
-            padding: 20px;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        .logo {
-            width: 100%;
-            max-width: 600px;
-            margin-bottom: 20px;
-        }
-
-        .message {
-            font-size: 1.5rem;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-       
-        a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        a:hover,
-        a:focus {
-            color: #e1306c; 
-        }
-
-        
-        .instagram-icon {
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 5px;
-        }
-  /* Footer */
-  footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        /* Enlace del footer */
-        footer a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        footer a:hover {
-            color: #e1306c; /* Color oficial de Instagram */
-        }
- /* Icono personalizado del footer */
- .custom-icon {
-            width: 50px;
-            height: 50px;
-            filter: brightness(0) invert(1); /* Convierte el icono a blanco */
-            transition: filter 0.3s ease;
-        }
-
-        /* Efecto hover para el icono personalizado */
-        footer a:hover .custom-icon {
-            filter: brightness(1) sepia(1) saturate(5) hue-rotate(300deg); /* Cambia a color Instagram */
-        }
-        @media (max-width: 600px) {
-            .logo {
-                max-width: 300px;
-            }
-
-            .message {
-                font-size: 1.2rem;
-            }
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <img src="Imagen/logo.png" alt="Logo" class="logo"> 
-        <p class="message">
-            Estamos desarrollando el sitio.<br>
-            Mientras podes chusmear todo el contenido por 
-            <a href="https://www.instagram.com/mundillotrans/">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="Instagram" class="instagram-icon" width="24" height="24">
-            </a>            
-            </a>
-        </p>
-    </div>
-    <footer>
-        <a href="https://www.contenidx.com.ar" title="Ir a la página destino">
-            <img src="imagen/CX.ico" alt="Icono Personalizado" class="custom-icon">
+    <nav class="navbar">
+        <a href="realindex.html" class="logo">
+            <img src="/imagen/logo.png" alt="Marca de Mundillo: estilo tipográfico deth metal">
         </a>
+        <div class="nav-links">
+            <a href="#initial-cover">Suscripción</a>
+            <a href="#contact">Contactanos</a>
+            <a href="#social-networks">Contenidos</a>
+            <a href="https://mundillo.store/"><i class="fa-solid fa-bag-shopping"></i>Tienda</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.twitch.tv" target="_blank"><i class="fab fa-twitch"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </nav>
 
+    <!-- Sección de contributions -->
+    <section id="initial-cover">
+        <div class="contributions">
+            <div class="contributions-text">
+                <img src="/imagen/gato-corazon.jpg " alt="Dibujo de gato con perfil furioso en blanco y negro rodeado de un corazón con puas. Boceto frontal.">
+                <div class="contributions-text-detail">
+                    <h3>Crecemos con el aporte y cariño de todes.</h3>
+                    <p>En mundillo buscamos generar un cambio cultural y para hacerlo, los contributions de nuestros oyentes son muy importantes.</p>
+                    <h6>Mundillo</h6>
+                </div>
+            </div>
+            <div class="figures">
+                <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808494d5e4f10194e28a187b0779" class="plan" target="_blank">
+                    <h2>$3.000</h2>
+                    <p>por mes</p>
+                </a>
+                <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808494d5e4f10194e281b5a5076f" class="plan" target="_blank">
+                    <h2>$5.000</h2>
+                    <p>por mes</p>
+                </a>
+                <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808494d5e4f40194e285d38607a5" class="plan" target="_blank">
+                    <h2>$7.000</h2>
+                    <p>por mes</p>
+                </a>
+                <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808494b46ea50194cf03e6100d47" class="plan" target="_blank">
+                    <h2>$10.000</h2>
+                    <p>por mes</p>
+                </a>
+                <a  href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808494dc05c90194e28aee7703c0"class="plan" target="_blank">
+                    <h2>$15.000</h2>
+                    <p>por mes</p>
+                </a>
+                <a href="" class="plan" target="_blank">
+                    <h2>$20.000</h2>
+                    <p class="rating">por<span> única vez</span></p>
+                </a>
+                
+                <div class="ppal">
+                    <p>Si estás fuera de Argentina podés suscribirte desde</p>
+                    <img src="/imagen/ppcom.svg" alt="Paypal logo">
+                </div>
+
+                <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-1YM83184GT531263SNAF7G4A" class="ppal-plan" target="_blank">
+                    <h2>5 U$D</h2>
+                    <p>por mes</p>
+                </a>
+                <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-81B140685A3507146NAGAFXQ" class="ppal-plan" target="_blank">
+                    <h2>10 U$D</h2>
+                    <p>por mes</p>
+                    
+              </a>
+                <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-1F756633D3032440KNAGAIGI" class="ppal-plan" target="_blank">
+                    <h2>20 U$D</h2>
+                    <p class="rating">por mes</p>
+                </a>
+                
+
+                <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-50H7081943123010CNAF7JSI" class="ppal-plan" target="_blank">
+                    <h2>5 €</h2>
+                    <p>por mes</p>
+                </a>
+                <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-5TM72591TW074230HNAGAGUA" class="ppal-plan" target="_blank">
+                    <h2>10 €</h2>
+                    <p>por mes</p>
+                </a>
+                <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8VA449729W478170UNAGALMY" class="ppal-plan" target="_blank">
+                    <h2>20 €</h2>
+                    <p class="rating">por mes</p>
+                </a>
+
+                <a href="https://paypal.me/TheodoroTaccone?country.x=AR&locale.x=es_XC" class="other-value" target="_blank">
+                    <!-- <h2>otro monto</h2> -->
+                    <p class="rating"><span>Definir monto</span></p>
+                </a>
+
+                <div class="alias">
+                    <p>Hacé el aporte que quieras</p>
+                    <div>
+                        <h3>ALIAS</h3>
+                        <p>MUNDILLOTRANS1</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Beneficios -->
+    <section class="benefits">
+        <img src="/imagen/Mundillo-Iso-Negro.svg" alt="Marca isologo de Mundillo">
+        <div class="benefits-details">
+            <!-- <img src="/imagen/Tarjetas.png" alt="3 Tarjetas de Mundillo dispuestas de diferente formas. Son negras con texto blanco."> -->
+            <img src="/imagen/tarjetas-fondo-rojo.png" alt="3 Tarjetas de Mundillo dispuestas de diferente formas. Son negras con texto blanco.">
+            <div>
+                <h1>Beneficios</h1>
+                <h4>Al suscribirte, accedés a descuentos y beneficios en estas tiendas</h4>
+                <p>Mundillo extiende todas sus formas para contribuir con quienes nos aportan para crecer.</p>
+                <a class="suscribirse" href="#initial-cover">Suscribirse</a>
+            </div>
+        </div>
+        <div class="benefits-cards">
+            <a class="benefit-card" href="https://www.instagram.com/proudskinstore/" target="_blank">
+                <img src="imagen/beneficio-proudskin.png" alt="Beneficio 1"> 
+            </a>
+            <a class="benefit-card" href="https://www.instagram.com/lamariqueria/" target="_blank">
+                <img src="imagen/beneficio-mariqueria.png" alt="Beneficio 2">
+            </a>
+            <div class="benefit-card"  href="https://www.instagram.com/josha.ok/" target="_blank">
+                <img src="imagen/beneficio-josha.png" alt="Beneficio 3">
+            </div>
+            <a class="benefit-card"  href="https://www.instagram.com/armandobinders.arg/" target="_blank">
+                <img src="imagen/beneficio-armando.png" alt="Beneficio 4">
+            </a>
+            <a class="benefit-card" href="https://contenidx.com.ar/" target="_blank">
+                <img src="imagen/beneficio-cx.png" alt="Beneficio 5">
+            </a>
+            <a class="benefit-card" href="https://www.instagram.com/carologiladas/" target="_blank">
+                <img src="imagen/beneficio-carold.png" alt="Beneficio 6">
+            </a>
+            <a class="benefit-card" href="https://www.instagram.com/feriakokoro/" target="_blank">
+                <img src="imagen/beneficio-feria-kokoro.png" alt="Beneficio 7">
+            </a>
+            <a class="benefit-card" href="https://www.instagram.com/clubsocial911/" target="_blank">
+                <img src="imagen/beneficio-nueveonce.png" alt="Beneficio 8">
+            </a>
+            <a class="benefit-card" href="https://www.instagram.com/studio_homeless?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank">
+                <img src="imagen/beneficio-studio-homeless.png" alt="Beneficio 9">
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección de Redes Sociales -->
+    <section class="social-links" id="social-networks">
+        <div class="cover-media">
+            <iframe 
+                src="https://www.youtube.com/embed/videoseries?list=PLpEfzazlYZqqSmqi4MY3jehCrhvi8EHs2&autoplay=1&mute=1" 
+                title="Canal de YouTube"
+                allowfullscreen
+                allow="autoplay; encrypted-media">
+            </iframe> 
+            <div class="cover-media-btn">
+                <h2>Todo nuestro contenido lo vas a encontrar en:</h2>
+                <div>
+                    <a href="https://www.twitch.tv/search?term=mundillo%20trans" target="_blank"><i class="fa-brands fa-twitch"></i>Twitch</a>
+                    <a href="https://www.youtube.com/@muundillo" target="_blank"><i class="fa-brands fa-youtube"></i>YouTube</a>
+                </div>
+                <div class="cover-media-insta">
+                    <p>Estemos en contacto! Seguinos en Instagram</p>
+                    <a class="insta" href="https://www.instagram.com/muundillo/" target="_blank"><i class="fa-brands fa-instagram"></i>@muundillo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <!-- Sección de Tienda -->
+    <section id="store">
+        <div class="cover-store">
+            <img src="/imagen/tienda-portada.png" alt="Marca de mundillo sobre fondo negro">
+            <div class="store-action">
+                <h1>El estilo mundillo lo encontrás en la tienda</h1>
+                <div class="store-btn">
+                    <p>Fijate talles y modelos de todos los productos y accesorios.</p>
+                    <a href="https://mundillo.store/" target="">Ir a tienda<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="store-elements">
+            <div class="store-cards">
+                <!-- <a href="https://mundillo.store/" class="store-card" target="_blank">
+                    <img src="/imagen/Store-Tote-3.png" alt="Producto: Bolsa tote con impresión de Mundillo.">
+                    <h3>Ver en tienda</h3>
+                </a> -->
+                <a href="https://mundillo.store/" class="store-card" target="_blank">
+                    <img src="/imagen/Theo-Cigarro.png" alt="Producto: Piluso con impresión de Mundillo.">
+                    <h3>Ver en tienda</h3>
+                </a>
+                <a href="https://mundillo.store/" class="store-card" target="_blank">
+                    <img src="/imagen/Store-Buzo-Mundillo.jpg" alt="Producto: Buzo negro con impresión de Mundillo.">
+                    <h3>Ver en tienda</h3>
+                </a>
+                <a href="https://mundillo.store/" class="store-card" target="_blank">
+                    <img src="/imagen/Store-Gorra-Turquesa.jpg" alt="Producto: Tote con impresión de Mundillo.">
+                <h3>Ver en tienda</h3>
+                </a>
+                <a href="https://mundillo.store/" class="store-card" target="_blank">
+                    <img src="/imagen/Store-Remera-Gato-Corazon-Blanca.jpg" alt="Producto: Remera negra con impresión de Mundillo.">
+                    <h3>Ver en tienda</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="btn-go-up">
+        <a href="#initial-cover" class="go-up">
+            <i class="fa-regular fa-circle-up"></i>
+        </a>
+    </div>
+
+    <!-- Formulario de Contacto -->
+    <section class="contact-form" id="contact">
+        <div class="form-contain">
+            <form method="post" data-netlify="true">
+                <input type="hidden" name="form-name" value="contacto">
+                <input type="hidden" name="redirect" value="/realindex.html">
+                <img src="/imagen/formulario.jpg" alt="Theo mirando a cámara">
+                <div class="info-form">
+                    <h3>Generamos contenido para nuestra comunidad</h3>
+                    <h2>Escribinos para mantenernos en contacto</h2>
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="mail" placeholder="Mail" required>
+                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>Hecho con cariño por</p><a href="https://contenidx.com.ar/" target="_blank"><p>Contenidx</p></a>
+            <!-- <p>De Contenidx para</p><img src="imagen/logo.png" alt="marca de mundillo"> -->
+        </div>
     </footer>
+    <script>
+        window.addEventListener("scroll", function () {
+            let div = document.querySelector(".go-up");
+            let scrollPosition = window.scrollY; // Obtiene la posición del scroll
+            let triggerPoint = 800; // Cambia este valor según el punto deseado
+            
+            if (scrollPosition > triggerPoint) {
+                div.style.opacity = 1;
+                div.style.transform = "translateY(0)";
+                div.style.transition = "all .3s ease-in-out";
+            } else {
+                div.style.opacity = 0;
+                div.style.transform = "translateY(20px)";
+            }
+        });
+    </script>
 </body>
 </html>
