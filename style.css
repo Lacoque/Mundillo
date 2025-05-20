@@ -87,6 +87,7 @@ h6 {
 }
 
 .navbar a {
+    display: flex;
     text-decoration: none;
     color: #E2E2E2;
 }
