@@ -107,6 +107,7 @@ h6 {
     background-image: url('imagen/Portada-inicial.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 .contributions {
     display: flex;
