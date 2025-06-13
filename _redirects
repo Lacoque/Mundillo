@@ -1,0 +1,5 @@
+# Redirigir www a non-www
+www.mundillo.com.ar/* https://mundillo.com.ar/:splat  301
+
+# Forzar barra final
+/* /index.html 200
