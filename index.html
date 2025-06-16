@@ -8,16 +8,19 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-mobile.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;1,400;1,700&display=swap" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style-mobile.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
     <nav class="navbar">
         <a href="#" class="logo">
-            <img src="/imagen/logo.png" alt="Marca de Mundillo: estilo tipográfico deth metal">
+            <img src="/imagen/logo.png" alt="Marca de Mundillo trans">
         </a>
         <div class="nav-links">
             <a href="#initial-cover">Suscripción</a>
@@ -35,7 +38,7 @@
     <section id="initial-cover">
         <div class="contributions">
             <div class="contributions-text">
-                <img src="/imagen/gato-corazon.jpg " alt="Dibujo de gato con perfil furioso en blanco y negro rodeado de un corazón con puas. Boceto frontal.">
+                <img src="/imagen/gato-corazon.jpg " alt="Dibujo de gato con perfil furioso en blanco y negro rodeado de un corazón con puas. Boceto frontal." fetchpriority="high">
                 <div class="contributions-text-detail">
                     <h3>Crecemos con el aporte y cariño de todes.</h3>
                     <p>En mundillo buscamos generar un cambio cultural y para hacerlo, los contributions de nuestros oyentes son muy importantes.</p>
@@ -120,10 +123,10 @@
 
     <!-- Sección de Beneficios -->
     <section class="benefits">
-        <img src="/imagen/Mundillo-Iso-Negro.svg" alt="Marca isologo de Mundillo">
+        <img src="/imagen/Mundillo-Iso-Negro.svg" alt="Marca isologo de Mundillo" fetchpriority="high">
         <div class="benefits-details">
-            <!-- <img src="/imagen/Tarjetas.png" alt="3 Tarjetas de Mundillo dispuestas de diferente formas. Son negras con texto blanco."> -->
-            <img src="/imagen/tarjetas-fondo-rojo.png" alt="3 Tarjetas de Mundillo dispuestas de diferente formas. Son negras con texto blanco.">
+           
+            <img src="/imagen/tarjetas-fondo-rojo.png" alt="3 Tarjetas de Mundillo dispuestas de diferente formas. Son negras con texto blanco." fetchpriority="high">
             <div>
                 <h1>Beneficios</h1>
                 <h4>Al suscribirte, accedés a descuentos y beneficios en estas tiendas</h4>
@@ -190,7 +193,7 @@
     <!-- Sección de Tienda -->
     <section id="store">
         <div class="cover-store">
-            <img src="/imagen/tienda-portada.png" alt="Marca de mundillo sobre fondo negro">
+            <img src="/imagen/tienda-portada.png" alt="Marca de mundillo sobre fondo negro" fetchpriority="high">
             <div class="store-action">
                 <h1>El estilo mundillo lo encontrás en la tienda</h1>
                 <div class="store-btn">
@@ -201,10 +204,7 @@
         </div>
         <div class="store-elements">
             <div class="store-cards">
-                <!-- <a href="https://mundillo.store/" class="store-card" target="_blank">
-                    <img src="/imagen/Store-Tote-3.png" alt="Producto: Bolsa tote con impresión de Mundillo.">
-                    <h3>Ver en tienda</h3>
-                </a> -->
+                
                 <a href="#" class="store-card" target="_blank">
                     <img src="/imagen/Theo-Cigarro.png" alt="Producto: Piluso con impresión de Mundillo.">
                     <h3>Ver en tienda</h3>
@@ -237,7 +237,7 @@
             <form method="post" data-netlify="true">
                 <input type="hidden" name="form-name" value="contacto">
                 <input type="hidden" name="redirect" value="/realindex.html">
-                <img src="/imagen/formulario.jpg" alt="Theo mirando a cámara">
+                <img src="/imagen/formulario.jpg" alt="Theo/mundillotrans mirando a cámara" fetchpriority="high">
                 <div class="info-form">
                     <h3>Generamos contenido para nuestra comunidad</h3>
                     <h2>Escribinos para mantenernos en contacto</h2>
@@ -279,7 +279,7 @@
                     <h4>Visitá la</h4><a href="https://mundillo.store/">Tienda</a>
                 </div>
             </div>    
-        </div>
+
 
         <!-- <div class="footer">
             <p>Hecho con cariño por</p><a href="https://contenidx.com.ar/" target="_blank"><p>Contenidx</p></a>
@@ -288,8 +288,8 @@
     <script>
         window.addEventListener("scroll", function () {
             let div = document.querySelector(".go-up");
-            let scrollPosition = window.scrollY; // Obtiene la posición del scroll
-            let triggerPoint = 800; // Cambia este valor según el punto deseado
+            let scrollPosition = window.scrollY; 
+            let triggerPoint = 800; 
             
             if (scrollPosition > triggerPoint) {
                 div.style.opacity = 1;

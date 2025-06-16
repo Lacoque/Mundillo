@@ -51,8 +51,6 @@ h6 {
     font-size: 1rem;
     text-transform: uppercase;
 }
-
-
 /* Navegador */
 .navbar {
     position: sticky;
@@ -68,23 +66,19 @@ h6 {
 
     z-index: 999;
 }
-
 .navbar .logo img {
     max-width: 30%;
 }
-
 .navbar .logo,
 .navbar .nav-links,
 .navbar .social-icons {
     flex: 1;
 }
-
 .nav-links {
     display: flex;
     gap: 2rem;
     justify-content: center;
 }
-
 .navbar a {
     display: flex;
     text-decoration: none;
@@ -108,8 +102,6 @@ h6 {
     }
 }
 
-
-
 /* Portada inicial */
 #initial-cover {
     height: 100vh;
@@ -123,8 +115,8 @@ h6 {
     background-image: url('imagen/Portada-inicial.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
-
 .contributions {
     display: flex;
     gap: 2.5rem;
@@ -175,7 +167,7 @@ h6 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: .85rem;
-    /* display: none; */
+  
 }
 
 .figures div,
