@@ -184,6 +184,16 @@ h6 {
     align-self: center;
 }
 
+.figures a:nth-child(4){
+    grid-column: span 1;
+}
+
+.figures a:nth-child(5) {
+    grid-column: span 2;
+}
+
+
+
 @media (hover:hover) {
     .figures a:hover {
         color: #fff;
