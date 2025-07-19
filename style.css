@@ -214,10 +214,6 @@ h6 {
     position: relative;
 }
 
-.figures a .rating span {
-    text-transform: uppercase;
-    font-weight: 900;
-}
 
 .figures div.ppal {
     grid-column: span 3;
