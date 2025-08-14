@@ -815,36 +815,6 @@ footer a {
 
 
 
-
-
-
-/* div.footer {
-    display: flex;
-    gap: .3rem;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 0rem;
-}
-
-div.footer a {
-    color: #E2E2E2;
-    font-weight: 600;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all .3s;
-    padding: .2rem;
-}
-div.footer a p {
-    transition: all .3s;
-}
-
-@media (hover:hover) {
-    div.footer a:hover p {
-        transform:translateY(-.5rem);
-        color:#fa001c;
-    }
-} */
-
 .btn-go-up {
     position: sticky;
     bottom: 20px;
@@ -881,4 +851,8 @@ div.footer a p {
     .go-up:hover i {
         transform: translateY(-5px);
     }
+}
+
+.tienda-banner {
+    display: none;
 }
