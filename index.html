@@ -127,14 +127,6 @@
 
         </div>
     </section>
-
-    <!-- <section>
-        <div class="tienda-banner">
-            <h3>Si querés colaborar llevandote algún producto de Mundillo entrá a la</h3>
-            <a class="suscribirse" href="#initial-cover">Ir a Tienda</a>
-        </div>
-    </section> -->
-
     <!-- Sección de Beneficios -->
     <section class="benefits">
         <img src="/imagen/Mundillo-Iso-Negro.svg" alt="Marca isologo de Mundillo" fetchpriority="high">
@@ -201,8 +193,6 @@
             </div>
         </div>
     </section>
-
-    
     
     <!-- Sección de Tienda -->
     <section id="store">
@@ -311,5 +301,46 @@
             }
         });
     </script>
+    <!-- mundillo cumple -->
+<div id="popup-fiesta" style="
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.7);
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 9999;
+padding: 20px;
+">
+<div style="position: relative; max-width: 90%; max-height: 90%;">
+    <span onclick="document.getElementById('popup-fiesta').style.display='none'" style="
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        background: white;
+        color: black;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    ">×</span>
+    <a href="https://www.passline.com/eventos/mundillo-cumpleanos" target="_blank">
+        <img src="/imagen/mundillo-cumple.jpg" alt="Fiesta Mundillo - Comprá tu entrada" style="
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        ">
+    </a>
+</div>
+</div>
 </body>
 </html>
