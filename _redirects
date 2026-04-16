@@ -1,5 +1,8 @@
 # Redirigir www a non-www
-www.mundillo.com.ar/* https://mundillo.com.ar/:splat  301
+www.mundillo.com.ar/* https://mundillo.com.ar/:splat 301
+
+# Redirección de tienda a SitioSimple
+tienda.mundillo.com.ar/* https://mundillo.misitiosimple.online/:splat 301!
 
 # Forzar barra final
 /* /index.html 200
