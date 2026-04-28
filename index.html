@@ -301,46 +301,70 @@
             }
         });
     </script>
-    <!-- banner del cumple -->
-<!-- <div id="popup-fiesta" style="
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0,0,0,0.7);
-display: flex;
-align-items: center;
-justify-content: center;
-z-index: 9999;
-padding: 20px;
-">
-<div style="position: relative; max-width: 90%; max-height: 90%;">
-    <span onclick="document.getElementById('popup-fiesta').style.display='none'" style="
-        position: absolute;
-        top: -15px;
-        right: -15px;
-        background: white;
-        color: black;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        font-weight: bold;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    ">×</span>
-    <a href="https://www.passline.com/eventos/mundillo-cumpleanos" target="_blank">
-        <img src="/imagen/mundillo-cumple.jpg" alt="Fiesta Mundillo - Comprá tu entrada" style="
-            max-width: 100%;
-            max-height: 80vh;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-        ">
+  <div id="mundillo-toast" role="alert" aria-live="polite">
+    <div class="toast-top">
+      <span class="toast-tag">Nuevo contenido</span>
+      <button class="toast-close" onclick="hideToast()" aria-label="Cerrar">×</button>
+    </div>
+ 
+    <div class="toast-icon-row">
+      <!-- Ícono YouTube inline SVG, sin dependencias externas -->
+      <svg class="toast-yt-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="6" fill="#FF0000"/>
+        <path d="M25.5 11.5C25.5 11.5 25.25 9.75 24.5 9C23.65 8.1 22.7 8.1 22.25 8.05C19.5 7.85 15.5 7.85 15.5 7.85H15.49C15.49 7.85 11.5 7.85 8.75 8.05C8.3 8.1 7.35 8.1 6.5 9C5.75 9.75 5.5 11.5 5.5 11.5S5.25 13.55 5.25 15.6V17.55C5.25 19.6 5.5 21.65 5.5 21.65S5.75 23.4 6.5 24.15C7.35 25.05 8.47 25.02 8.99 25.11C10.99 25.3 15.5 25.34 15.5 25.34C15.5 25.34 19.5 25.3 22.25 25.1C22.7 25.05 23.65 25.05 24.5 24.15C25.25 23.4 25.5 21.65 25.5 21.65S25.75 19.6 25.75 17.55V15.6C25.75 13.55 25.5 11.5 25.5 11.5ZM13.25 19.5V12.5L20.25 16.01L13.25 19.5Z" fill="white"/>
+      </svg>
+      <div class="toast-title">¿Ya me seguís en YouTube?</div>
+    </div>
+ 
+    <div class="toast-body">
+      Nuevo episodio disponible en el canal de Mundillo. Unite a la comunidad 
+    </div>
+ 
+    <a class="toast-cta" href="https://www.youtube.com/@muundillo" target="_blank" rel="noopener">
+      IR AL CANAL →
     </a>
-</div>
-</div> -->
+ 
+    <div class="toast-progress" id="toast-progress"></div>
+  </div>
+ 
+  <script>
+    // ── configuración ──────────────────────────
+    var DELAY_MS    = 3000;   // espera antes de aparecer (ms)
+    var VISIBLE_MS  = 10000;   // tiempo visible antes de auto-cerrar (ms)
+    // ──────────────────────────────────────────
+ 
+    var toast    = document.getElementById('mundillo-toast');
+    var progress = document.getElementById('toast-progress');
+    var timer;
+ 
+    function showToast() {
+      toast.classList.remove('hiding');
+      toast.classList.add('visible');
+ 
+      // barra de progreso
+      progress.style.transition = 'none';
+      progress.style.transform  = 'scaleX(1)';
+ 
+      // pequeño delay para que el browser pinte el estado inicial
+      requestAnimationFrame(function() {
+        requestAnimationFrame(function() {
+          progress.style.transition = 'transform ' + VISIBLE_MS + 'ms linear';
+          progress.style.transform  = 'scaleX(0)';
+        });
+      });
+ 
+      clearTimeout(timer);
+      timer = setTimeout(hideToast, VISIBLE_MS);
+    }
+ 
+    function hideToast() {
+      clearTimeout(timer);
+      toast.classList.remove('visible');
+      toast.classList.add('hiding');
+    }
+ 
+    // mostrar después del delay inicial
+    setTimeout(showToast, DELAY_MS);
+  </script>
 </body>
 </html>
